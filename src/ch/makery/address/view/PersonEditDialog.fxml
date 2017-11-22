@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1">
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonEditDialogController">
    <children>
       <GridPane layoutX="14.0" layoutY="14.0" prefHeight="178.0" prefWidth="308.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
         <columnConstraints>
@@ -25,12 +24,12 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField prefHeight="25.0" prefWidth="141.0" GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="firstNameField" prefHeight="25.0" prefWidth="141.0" GridPane.columnIndex="1" />
+            <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="streetField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cityField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="birthdayField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Label text="First Name" />
             <Label text="Last Name" GridPane.rowIndex="1" />
             <Label text="Street" GridPane.rowIndex="2" />
@@ -39,7 +38,7 @@
             <Label text="Birthday" GridPane.rowIndex="5" />
          </children>
       </GridPane>
-      <Button layoutX="135.0" layoutY="196.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="OK" AnchorPane.bottomAnchor="17.0" />
-      <Button layoutX="244.0" layoutY="196.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Cancel" AnchorPane.bottomAnchor="17.0" />
+      <Button layoutX="135.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="93.0" text="OK" AnchorPane.bottomAnchor="17.0" />
+      <Button layoutX="244.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="74.0" text="Cancel" AnchorPane.bottomAnchor="17.0" />
    </children>
 </AnchorPane>
