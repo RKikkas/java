@@ -4,8 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import ch.makery.address.MainApp;
-import ch.makery.address.model.Person;
+import ch.makery.address.*;
+import ch.makery.address.model.*;
 
 public class PersonOverviewController {
     @FXML
